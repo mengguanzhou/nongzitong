@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/gray">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="找回密码"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="122dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fr_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12.1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/findpwd_ll_style"
+            android:layout_marginTop="@dimen/width_6">
+
+            <TextView
+                android:layout_height="match_parent"
+                style="@style/findpwd_tv_info_style"
+                android:gravity="center_vertical"
+                android:text="    新密码:" />
+
+            <EditText
+                android:id="@+id/et_new_psw"
+                android:hint="密码只能由6-10位数字或者字母组成"
+                style="@style/findpwd_ed_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/findpwd_ll_style">
+
+            <TextView
+                android:layout_height="match_parent"
+                style="@style/findpwd_tv_info_style"
+                android:gravity="center_vertical"
+                android:text="确认密码:" />
+
+            <EditText
+                android:id="@+id/et_confirm_psw"
+                android:hint="请再次输入密码"
+                style="@style/findpwd_ed_style" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_phonenum"
+            android:layout_height="@dimen/width_30"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/width_10"
+            android:layout_marginLeft="@dimen/width_40"
+            android:layout_marginRight="@dimen/width_40"
+            android:hint="请输入注册手机号码"
+            android:paddingLeft="@dimen/width_6"
+            android:inputType="phone"
+            android:textSize="@dimen/textsize_10"
+            android:background="@drawable/findpwd_edit_shape" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_30"
+            android:layout_marginLeft="@dimen/width_40"
+            android:layout_marginRight="@dimen/width_40"
+            android:layout_marginTop="@dimen/width_14">
+
+            <EditText
+                android:id="@+id/verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/findpwd_edit_shape"
+                android:hint="请输入短信验证码"
+                android:paddingLeft="@dimen/width_6"
+                android:textSize="@dimen/textsize_10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/green"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/width_4"
+                android:paddingLeft="@dimen/width_10"
+                android:paddingRight="@dimen/width_10"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_12" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_marginTop="@dimen/width_10"
+            style="@style/btn_login_style"
+            android:text="完成" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/width_40"
+            android:layout_marginTop="@dimen/width_10"
+            android:textSize="@dimen/textsize_10"
+            android:text="遇到问题您?可以联系客服" />
+    </LinearLayout>
+
+</LinearLayout>

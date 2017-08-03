@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_150"
+        android:background="@drawable/fragment_my_bg">
+
+
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/fragment_my_login_style"
+            android:layout_marginLeft="@dimen/width_16"
+            android:layout_marginTop="46dp"
+            android:text="你好，蒙冠州！" />
+
+        <TextView
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="17dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="点击此处可退出登录"/>
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/fragment_my_addr_style"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_username"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/width_10"
+            android:drawableRight="@drawable/personal_arrow_right"
+            android:text="管理收货地址" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/width_40"
+            android:layout_alignParentBottom="true"
+            android:background="#22000000">
+
+            <LinearLayout
+                android:id="@+id/fragment_my_layout_focus"
+                style="@style/myfragment_linear_style">
+
+                <TextView
+                    android:id="@+id/fragment_my_tv_productCount"
+                    style="@style/myfragmet_text_style"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/myfragmet_text_style"
+                    android:text="关注商品"
+                    android:textSize="@dimen/textsize_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_my_shop_focus"
+                style="@style/myfragment_linear_style">
+
+                <TextView
+                    android:id="@+id/fragment_my_tv_shopCount"
+                    style="@style/myfragmet_text_style"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/myfragmet_text_style"
+                    android:text="关注店铺" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_lookrecord"
+                style="@style/myfragment_linear_style">
+
+                <TextView
+                    android:id="@+id/fragment_my_tv_scanCount"
+                    style="@style/myfragmet_text_style"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/myfragmet_text_style"
+                    android:text="浏览记录" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_order"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width_40"
+        android:layout_marginTop="@dimen/width_6"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/fragment_my_order"
+            android:drawablePadding="@dimen/width_10"
+            android:gravity="center_vertical"
+            android:text="我的订单"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fragment_my_tv_lookupOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:drawableRight="@drawable/personal_arrow_right"
+            android:hint="查看所有订单"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width_50"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_gopay"
+            style="@style/myfragment_order_tv_style"
+            android:layout_marginTop="1dp"
+            android:drawableTop="@drawable/fragment_my_tobepaid"
+            android:text="待支付" />
+
+        <TextView
+            android:id="@+id/tv_toSend"
+            style="@style/myfragment_order_tv_style"
+            android:layout_marginTop="1dp"
+            android:drawableTop="@drawable/daifahuo"
+            android:text="待发货" />
+
+        <TextView
+            android:id="@+id/tv_toReceive"
+            style="@style/myfragment_order_tv_style"
+            android:layout_marginTop="1dp"
+            android:drawableTop="@drawable/fragment_my_godstobereceived"
+            android:text="待收货" />
+
+        <TextView
+            android:id="@+id/tv_toComment"
+            style="@style/myfragment_order_tv_style"
+            android:layout_marginTop="1dp"
+            android:drawableTop="@drawable/fragment_my_tobeevaluated"
+            android:text="待评价" />
+
+        <TextView
+            android:id="@+id/tv_tofix"
+            style="@style/myfragment_order_tv_style"
+            android:layout_marginTop="1dp"
+            android:drawableTop="@drawable/fragment_my_tobepaid"
+            android:text="返修/退换" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_coupon"
+        style="@style/myfragment_wallet_style"
+        android:layout_marginTop="@dimen/width_10"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_my_wallet"
+        android:text="优惠券" />
+
+    <TextView
+        android:id="@+id/tv_help"
+        style="@style/myfragment_wallet_style"
+        android:layout_marginTop="@dimen/width_1"
+        android:drawableLeft="@drawable/symbol"
+        android:text="帮助中心" />
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        style="@style/myfragment_wallet_style"
+        android:drawableLeft="@drawable/wallet1"
+        android:text="我的钱包" />
+
+    <TextView
+        android:id="@+id/tv_my_account"
+        style="@style/myfragment_wallet_style"
+        android:drawableLeft="@drawable/shoutuo"
+        android:text="受托账户" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="按分类搜索商品"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_22"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            style="@style/category_tv"
+            android:text="农资种类："/>
+        <TextView
+            android:id="@+id/sp_category"
+            style="@style/category_sp"
+            android:hint="肥料"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            style="@style/category_tv"
+            android:layout_marginLeft="72dp"
+            android:text="品牌："/>
+        <TextView
+            android:id="@+id/sp_brand"
+            style="@style/category_sp"
+            android:hint="点击选择品牌"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            style="@style/category_tv"
+            android:layout_marginLeft="72dp"
+            android:text="分类："/>
+        <TextView
+            android:id="@+id/sp_type"
+            style="@style/category_sp"
+            android:hint="点击选择具体分类"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            style="@style/category_tv"
+            android:text="商家名称："/>
+        <EditText
+            android:id="@+id/et_solder"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:background="@drawable/edittext_category"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize_16"
+            android:textColorHint="@color/grass_green"
+            android:hint="在此输入商家名称"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            style="@style/category_tv"
+            android:text="商品名称："/>
+        <EditText
+            android:id="@+id/et_key"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:background="@drawable/edittext_category"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize_16"
+            android:textColorHint="@color/grass_green"
+            android:hint="在此输入商品名称或关键词"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/btn_login_style"
+        android:layout_gravity="center"
+        android:text="搜 索"
+        android:textSize="@dimen/textsize_18"/>
+
+
+
+</LinearLayout>

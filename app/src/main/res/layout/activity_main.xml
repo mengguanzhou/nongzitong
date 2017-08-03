@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical"
+    tools:context="com.mgz.nongzitong.nongzitong.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_home"
+            style="@style/main_ib_style"
+            android:src="@drawable/tab_home_selector" />
+
+        <ImageButton
+            android:id="@+id/ib_category"
+            style="@style/main_ib_style"
+            android:src="@drawable/tab_catogory_selector" />
+
+
+        <ImageButton
+            android:id="@+id/ib_cart"
+            style="@style/main_ib_style"
+            android:src="@drawable/tab_cart_selector" />
+
+        <ImageButton
+            android:id="@+id/ib_my"
+            style="@style/main_ib_style"
+
+            android:src="@drawable/tab_my_selector" />
+    </LinearLayout>
+
+</LinearLayout>
